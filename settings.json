@@ -18,6 +18,7 @@
 
     // If enabled, formatted data is also copied to your clipboard
     "copyFormatting": false,
+    "confirmCloseAllTabs": false,
 
     // A profile specifies a command to execute paired with information about how it should look and feel.
     // Each one of them will appear in the 'New Tab' dropdown,
@@ -32,21 +33,21 @@
                 "guid": "{00000000-0000-0000-ba54-000000000002}",
                 "acrylicOpacity": 0.80,
                 "closeOnExit": true,
-                "colorScheme": "custom",
+                "colorScheme": "Gruvbox Dark",
                 "commandline": "\"%PROGRAMFILES%\\git\\bin\\bash.exe\" -i -l",
                 "cursorColor": "#ffffff",
                 "cursorShape": "filledBox",
                 "fontFace": "Consolas",
                 "fontSize": 15,
                 "historySize": 9001,
-                "icon": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdonyprisma.files.wordpress.com%2F2011%2F11%2Flinux-icons-penguin_3_256x256-256x256.png&f=1&nofb=1",
+                "icon": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.omgubuntu.co.uk%2Fwp-content%2Fuploads%2F2016%2F09%2Fterminal-icon.png&f=1&nofb=1",
                 "name": "Terminal",
                 "padding": "0, 0, 0, 0",
                 "snapOnInput": true,
-                "startingDirectory": "%USERPROFILE%/documents",
+                "startingDirectory": "%USERPROFILE%\\Documents",
                 "useAcrylic": false,
                 "tabTitle": "Terminal",
-                "backgroundImage": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F642945.jpg&f=1&nofb=1",
+                // "backgroundImage": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F642945.jpg&f=1&nofb=1",
                 "backgroundImageOpacity": 0.2
             },
             {
@@ -75,31 +76,116 @@
     // Add custom color schemes to this array.
     // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
     "schemes": [{
-        "name": "custom",
+            "name": "custom",
 
-        "cursorColor": "#FFFFFF",
-        "selectionBackground": "#FFFFFF",
+            "cursorColor": "#FFFFFF",
+            "selectionBackground": "#FFFFFF",
 
-        "background": "#000000",
-        "foreground": "#e4e4e4",
+            "background": "#000000",
+            "foreground": "#e4e4e4",
 
-        "black": "#000000",
-        "blue": "#0040ff",
-        "cyan": "#67bdff",
-        "green": "#11e90a",
-        "purple": "#d831ee",
-        "red": "#C50F1F",
-        "white": "#eeeeee",
-        "yellow": "#ffcc00",
-        "brightBlack": "#aaaaaa",
-        "brightBlue": "#3B78FF",
-        "brightCyan": "#61D6D6",
-        "brightGreen": "#16d40b",
-        "brightPurple": "#d804bf",
-        "brightRed": "#E74856",
-        "brightWhite": "#F2F2F2",
-        "brightYellow": "#F9F1A5"
-    }],
+            "black": "#000000",
+            "blue": "#3886ce",
+            "cyan": "#b04d84",
+            "green": "#945cad",
+            "purple": "#5ea4ad",
+            "red": "#C50F1F",
+            "white": "#eeeeee",
+            "yellow": "#f8f52a",
+            "brightBlack": "#aaaaaa",
+            "brightBlue": "#3886ce",
+            "brightCyan": "#b04d84",
+            "brightGreen": "#16d40b",
+            "brightPurple": "#5ea4ad",
+            "brightRed": "#E74856",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#F9F1A5"
+        },
+        {
+            "name": "Gruvbox Dark",
+            "black": "#1e1e1e",
+            "red": "#be0f17",
+            "green": "#868715",
+            "yellow": "#cc881a",
+            "blue": "#377375",
+            "purple": "#a04b73",
+            "cyan": "#578e57",
+            "white": "#978771",
+            "brightBlack": "#7f7061",
+            "brightRed": "#f73028",
+            "brightGreen": "#aab01e",
+            "brightYellow": "#f7b125",
+            "brightBlue": "#719586",
+            "brightPurple": "#c77089",
+            "brightCyan": "#7db669",
+            "brightWhite": "#e6d4a3",
+            "background": "#1e1e1e",
+            "foreground": "#e6d4a3"
+        },
+        {
+            "name": "Hurtado",
+            "black": "#575757",
+            "red": "#ff1b00",
+            "green": "#a5e055",
+            "yellow": "#fbe74a",
+            "blue": "#496487",
+            "purple": "#fd5ff1",
+            "cyan": "#86e9fe",
+            "white": "#cbcccb",
+            "brightBlack": "#262626",
+            "brightRed": "#d51d00",
+            "brightGreen": "#a5df55",
+            "brightYellow": "#fbe84a",
+            "brightBlue": "#89beff",
+            "brightPurple": "#c001c1",
+            "brightCyan": "#86eafe",
+            "brightWhite": "#dbdbdb",
+            "background": "#000000",
+            "foreground": "#dbdbdb"
+        },
+        {
+            "name": "VibrantInk",
+            "black": "#878787",
+            "red": "#ff6600",
+            "green": "#ccff04",
+            "yellow": "#ffcc00",
+            "blue": "#44b4cc",
+            "purple": "#9933cc",
+            "cyan": "#44b4cc",
+            "white": "#f5f5f5",
+            "brightBlack": "#555555",
+            "brightRed": "#ff0000",
+            "brightGreen": "#00ff00",
+            "brightYellow": "#ffff00",
+            "brightBlue": "#0000ff",
+            "brightPurple": "#ff00ff",
+            "brightCyan": "#00ffff",
+            "brightWhite": "#e5e5e5",
+            "background": "#000000",
+            "foreground": "#ffffff"
+        },
+        {
+            "name": "Banana Blueberry",
+            "black": "#17141f",
+            "red": "#ff6b7f",
+            "green": "#00bd9c",
+            "yellow": "#e6c62f",
+            "blue": "#22e8df",
+            "purple": "#dc396a",
+            "cyan": "#56b6c2",
+            "white": "#f1f1f1",
+            "brightBlack": "#495162",
+            "brightRed": "#fe9ea1",
+            "brightGreen": "#98c379",
+            "brightYellow": "#f9e46b",
+            "brightBlue": "#91fff4",
+            "brightPurple": "#da70d6",
+            "brightCyan": "#bcf3ff",
+            "brightWhite": "#ffffff",
+            "background": "#191323",
+            "foreground": "#cccccc"
+        }
+    ],
 
     // Add custom keybindings to this array.
     // To unbind a key combination from your defaults.json, set the command to "unbound".
@@ -125,6 +211,21 @@
             "command": "find",
             "keys": "ctrl+shift+f"
         },
+        {
+            "command": {
+                "action": "newTab",
+                "index": 0
+            },
+            "keys": "ctrl+t"
+        },
+        {
+            "command": "toggleFullscreen",
+            "keys": "alt+enter"
+        },
+        {
+            "command": "toggleFullscreen",
+            "keys": "f11"
+        },
 
         // Press Alt+Shift+D to open a new pane.
         // - "split": "auto" makes this pane open in the direction that provides the most surface area.
@@ -137,6 +238,10 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
+        },
+        {
+            "command": "closePane",
+            "keys": "ctrl+w"
         }
     ]
 }
