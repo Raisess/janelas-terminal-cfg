@@ -21,7 +21,6 @@
     // If enabled, formatted data is also copied to your clipboard
     "copyFormatting": false,
     "confirmCloseAllTabs": false,
-    "scrollbarState": "hidden",
 
     // A profile specifies a command to execute paired with information about how it should look and feel.
     // Each one of them will appear in the 'New Tab' dropdown,
@@ -34,24 +33,20 @@
         },
         "list": [{
                 "guid": "{00000000-0000-0000-ba54-000000000002}",
-                "acrylicOpacity": 0.80,
                 "closeOnExit": true,
-                "colorScheme": "Builtin Solarized Dark",
+                "colorScheme": "Gruvbox Dark",
                 "commandline": "\"%PROGRAMFILES%\\git\\bin\\bash.exe\" -i -l",
                 "cursorColor": "#ffffff",
                 "cursorShape": "filledBox",
                 "fontFace": "Cascadia Code PL",
-                "fontSize": 13,
+                "fontSize": 12,
                 "historySize": 9001,
                 "icon": "%USERPROFILE%\\Pictures\\icons\\download.png",
                 "name": "Terminal -bash",
                 "padding": "0, 0, 0, 0",
                 "snapOnInput": true,
                 "startingDirectory": "%USERPROFILE%\\Documents",
-                "useAcrylic": false,
                 "tabTitle": "Terminal -bash"
-                // "backgroundImage": "%USERPROFILE%\\Pictures\\wp\\download.jfif",
-                // "backgroundImageOpacity": 0.07
             },
             {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
@@ -65,34 +60,13 @@
     // Add custom color schemes to this array.
     // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
     "schemes": [{
-            "name": "BlulocoDark",
-            "black": "#4a505d",
-            "red": "#f81141",
-            "green": "#23974a",
-            "yellow": "#fd7e57",
-            "blue": "#285bff",
-            "purple": "#8c62fd",
-            "cyan": "#366f9a",
-            "white": "#ccd5e5",
-            "brightBlack": "#61697a",
-            "brightRed": "#fc4a6d",
-            "brightGreen": "#37bd58",
-            "brightYellow": "#f6be48",
-            "brightBlue": "#199ffd",
-            "brightPurple": "#fc58f6",
-            "brightCyan": "#50acae",
-            "brightWhite": "#ffffff",
-            "background": "#1f2227",
-            "foreground": "#abb2bf"
-        },
-        {
             "name": "Gruvbox Dark",
             "black": "#1e1e1e",
             "red": "#be0f17",
-            "green": "#868715",
-            "yellow": "#cc881a",
+            "green": "#B8BB26",
+            "yellow": "#FE8019",
             "blue": "#377375",
-            "purple": "#a04b73",
+            "purple": "#B27485",
             "cyan": "#578e57",
             "white": "#978771",
             "brightBlack": "#7f7061",
@@ -103,8 +77,8 @@
             "brightPurple": "#c77089",
             "brightCyan": "#7db669",
             "brightWhite": "#e6d4a3",
-            "background": "#1e1e1e",
-            "foreground": "#e6d4a3"
+            "background": "#282828",
+            "foreground": "#EBDBB2"
         },
         {
             "name": "Dracula",
@@ -147,6 +121,27 @@
             "brightWhite": "#fdf6e3",
             "background": "#002b36",
             "foreground": "#839496"
+        },
+        {
+            "name": "Molokai",
+            "black": "#121212",
+            "red": "#fa2573",
+            "green": "#98e123",
+            "yellow": "#dfd460",
+            "blue": "#1080d0",
+            "purple": "#8700ff",
+            "cyan": "#43a8d0",
+            "white": "#bbbbbb",
+            "brightBlack": "#555555",
+            "brightRed": "#f6669d",
+            "brightGreen": "#b1e05f",
+            "brightYellow": "#fff26d",
+            "brightBlue": "#00afff",
+            "brightPurple": "#af87ff",
+            "brightCyan": "#51ceff",
+            "brightWhite": "#ffffff",
+            "background": "#1B1D1E",
+            "foreground": "#bbbbbb"
         }
     ],
 
@@ -204,7 +199,7 @@
         },
         {
             "command": "closePane",
-            "keys": "ctrl+w"
+            "keys": "ctrl+q"
         }
     ]
 }
