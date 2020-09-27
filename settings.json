@@ -39,7 +39,7 @@
                 "cursorColor": "#ffffff",
                 "cursorShape": "filledBox",
                 "fontFace": "Cascadia Code PL",
-                "fontSize": 12,
+                "fontSize": 10,
                 "historySize": 9001,
                 "icon": "%USERPROFILE%\\Pictures\\icons\\download.png",
                 "name": "Terminal -bash",
@@ -77,7 +77,7 @@
             "brightPurple": "#c77089",
             "brightCyan": "#7db669",
             "brightWhite": "#e6d4a3",
-            "background": "#282828",
+            "background": "#1D2021",
             "foreground": "#EBDBB2"
         },
         {
